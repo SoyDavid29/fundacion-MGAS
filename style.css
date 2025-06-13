@@ -131,9 +131,11 @@ nav a {
 }
 
 .texts {
+
+  width: 100%;
   background-color: rgba(255, 0, 128, 0.5);
   padding: 2rem;
-  width: 100%;
+  
 }
 
 .button-text {
@@ -167,9 +169,6 @@ nav a {
   text-decoration: none;
 }
 
-
-
-
 /* 🪄 Mobile Responsiveness */
 @media (max-width: 882px) {
   .text-galery {
@@ -186,6 +185,55 @@ nav a {
 }
 
 
+.info{
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.malala{
+  width: 100%;
+  height: auto;
+  background-color: rgba(136, 17, 240, 1);
+
+  display: flex;
+  justify-content: center;
+}
+
+.malala-img{
+  width: 90%;
+}
+
+.mgas{
+  width: 100%;
+  height: auto;
+
+  background-color: #a3d1af;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fundacion{
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mgas-img{
+  width: 50%;
+  height: auto;
+}
+
+h2,h1{
+  font-size: 2rem;
+  color: #ffffff;
+  padding: 2rem;
+}
 
 .seccion {
   padding: 40px 20px;

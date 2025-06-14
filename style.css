@@ -13,6 +13,7 @@ body {
 header {
   margin: 0 auto;
   width: 100%;
+
   background-color: #ffffff;
   color: black;
   padding: 20px 0;
@@ -49,7 +50,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: 3rem;
   width: 65%;
 }
 
@@ -59,7 +60,7 @@ nav a {
   font-family: 'Open Sans', sans-serif;
   font-size: 13px;
   text-transform: capitalize;
-  padding: 0.5rem 1rem;
+
 }
 
 /* 📱 Responsive styles */
@@ -72,8 +73,8 @@ nav a {
     display: none;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
-    background-color: rgb(0, 0, 0);
+    height: 50%;
+    background: rgba(144, 168, 236, 0.966);
     margin-top: 1rem;
     padding: 1rem 0;
     text-align: center;
@@ -82,7 +83,7 @@ nav a {
   nav a {
     padding: 0.75rem 1rem;
     font-size: 1rem;
-    color: white;
+    color: rgb(5, 5, 5);
   }
 
   nav.active {
@@ -117,10 +118,10 @@ nav a {
 
 .text-galery {
   position: absolute; /* key */
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90%;
+  width: 90%;;
   z-index: 2;
 
   display: flex;
@@ -134,57 +135,164 @@ nav a {
 
 .texts {
 
-  width: 100%;
+  width: 80%;
   background-color: rgba(255, 0, 128, 0.5);
-  padding: 2rem;
+  padding: 2em;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
   
 }
 
+.main-tittle{
+  font-size: 2em;
+}
+
 .button-text {
-  width: 100%;
+ 
+  height: auto;
   display: flex;
+
   flex-direction: row;
-  gap: 1rem;
   justify-content: center;
+  flex-wrap: wrap; /* NEW - allows wrapping */
+  gap: 1rem;
+  padding: 2rem;
+
+  
 }
 
-.text-button1,
-.text-button2,
+.text-button1 { 
+background-color: #4AAB10; 
+
+display: flex;
+flex: 1 1 300px;
+flex-direction: row;
+align-items: center;
+text-decoration: none;
+padding: 2rem;
+gap: 2em;
+
+}
+.text-button2 { 
+background-color: #FF9600; 
+
+display: flex;
+flex: 1 1 300px;
+flex-direction: row;
+align-items: center;
+text-decoration: none;
+padding: 2rem;
+gap: 2em;
+}
 .text-button3 {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  padding: 1rem 1.5rem;
-  color: white;
+background-color: #00B4D8;
+
+display: flex;
+flex: 1 1 300px;
+flex-direction: row;
+align-items: center;
+text-decoration: none;
+padding: 2rem;
+gap: 2em;
 }
 
-.text-button1 { background-color: #4AAB10; }
-.text-button2 { background-color: #FF9600; }
-.text-button3 { background-color: #00B4D8; }
+.text-button1 a,
+.text-button2 a,
+.text-button3 a {
+  
+  width: 40%;
+
+  text-align: center; /* or center if you want */
+  white-space: nowrap;
+
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin-top: auto;
+  align-self: flex-end; /* align the link to the right side */
+}
+
+
+.min-text{
+  font-size: 1.5rem;
+}
 
 .button1, .button2, .button3 {
-  color: white;
+
+  font-size: 1rem;
+
+  width: 100%;
+  height: auto;
+
   background-color: rgba(255, 255, 255, 0.2);
-  padding: 0.5rem 1rem;
-  margin-top: 0.5rem;
   text-decoration: none;
+  padding: 1em;
 }
 
 /* 🪄 Mobile Responsiveness */
-@media (max-width: 882px) {
+
+@media (max-width: 518px) {
+
+  body{
+    min-width: 250px;
+  }
   .text-galery {
-    width: 95%;
-    top: 45%;
-    transform: translate(-50%, -50%);
-    font-size: clamp(1rem, 4vw, 1.5rem);
+    position: absolute; /* ⬅️ KEEP this */
+    top: 50%; /* ⬅️ Try 50%, adjust as needed */
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 80%;
+    min-width: 292px;
+    font-size: clamp(1rem, 4vw, 1.2rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .main-tittle{
+    font-size: 2em;
   }
 
   .button-text {
-    flex-direction: column;
+    width: 100%;
     align-items: center;
+    gap: 0;
+  }
+
+  .text-button1, 
+  .text-button2, 
+  .text-button3 {
+    width: 100%;
+    min-width: 290px;
+    padding: 2rem;
+  }
+
+  .text-button1 a,
+  .text-button2 a,
+  .text-button3 a {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .min-text {
+    font-size: 16px;
+  }
+
+  .mgas{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tittle1, .tittle2{
+   font-size: 1.5em;
+   color: #ffffff;
   }
 }
+
 
 
 .info{
@@ -218,8 +326,8 @@ nav a {
   align-items: center;
 }
 
+
 .fundacion{
-  width: 50%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -231,8 +339,8 @@ nav a {
   height: auto;
 }
 
-h2,h1{
-  font-size: 2rem;
+.tittle1, .tittle2{
+  font-size: 2em;
   color: #ffffff;
   padding: 2rem;
 }
@@ -276,10 +384,4 @@ footer {
   text-align: center;
   padding: 20px;
   font-size: 14px;
-}
-
-@media (max-width: 600px) {
-  .hero h1 {
-    font-size: 28px;
-  }
 }

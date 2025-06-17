@@ -384,7 +384,7 @@ gap: 2em;
 }
 
 .img-nosotros{
-  width: 55%;
+  width: 100%;
   height: auto;
 }
 
@@ -394,20 +394,16 @@ gap: 2em;
  color: #666666;
 }
 
-@media (max-width: 700px){
- .nosotros{
-  display: flex;
-  flex-wrap: wrap;
- }
-
- .tittle3{
-  text-align: center;
- }
-}
 
 .president{
+  margin-top: 5em;
+
   width: 100%;
   height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   background-color: rgba(236, 241, 246, 1);
   
@@ -415,31 +411,42 @@ gap: 2em;
 
 .presidenta{
 
+  padding: 3em;
+  width: 100%;
+  height: auto;
+
   font-family: 'Open Sans', sans-serif;
   text-align: center;
 
   font-size: 2.4em;
   line-height: 1.3em;
-  margin: 0 0 .3em;
   font-weight: 300;
 
   color: #E009DA;
 }
 
 .about-me{
- display: flex;
+ width: 90%;
+ height: auto;
+ padding-bottom: 10em;
 
- width: 95%;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ gap: 5em;
 }
 
 .biografia{
+
   width: 50%;
   height: auto;
+  
 
   display: flex;
   flex-direction: column;
-  gap: 1em;
-  padding: 8em;
+ 
+  
 }
 
 .mari{
@@ -450,9 +457,15 @@ gap: 2em;
 
 .bio{
   color: rgba(96, 91, 168, 1);
+  min-width: 20em;
+  max-width: 34em;
+  height: auto;
 }
 
 .acordeon{
+
+  width: 50%;
+  height: auto;
 
   margin-top: 2em;
 
@@ -461,20 +474,134 @@ gap: 2em;
 
   display: flex;
   flex-direction: column;
-  gap: 4em;
+  gap: 3em;
 }
 
 .img-me{
-  width: 50%;
-  height: auto;
-  object-fit: cover;
-
-  padding: 8em;
+  max-width: 50%;
+  
 }
 
+.auditory{
+
+  margin-top: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  height: auto;
+}
+
+.tittle4{
+
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  
+  font-size: 2.4em;
+  line-height: 1.3em;
+  margin: 0 0 .3em;
+  font-weight: 300;
+  color: rgba(224, 13, 154, 1);
+}
+
+.auditoria{
+
+  width: 80%;
+  height: auto;
+  padding-top: 168px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  
+  gap: 4em;
+}
+
+.textos-auditoria{
+
+  width: 50%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.tittle5{
+
+  font-family: 'Open Sans', sans-serif;
+  
+  font-size: 4em;
+  line-height: 1.3em;
+  font-weight: 300;
+  color:#000
+}
+
+p{
+  color: #666666;
+}
+
+.p-negritas{
+  font-weight: bolder;
+  color: #666666;
+}
+
+.vermas{
+  width: 120px;
+  height: auto;
+  
+  word-break: no-wrap;
+  padding: 1em;
+  text-decoration: none;
+
+  color: #ccc;
+  background-color: rgba(224, 66, 100, 1);
+}
+
+.logoEY{
+  width: 50%;
+  height: auto;
+
+  object-fit: cover;
+}
+
+@media (max-width: 794px){
+  .about-me{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 700px){
+ .nosotros{
+  display: flex;
+  flex-wrap: wrap;
+ }
+
+ .img-nosotros{
+  width: 100%;
+ }
+ .tittle3{
+  text-align: center;
+ }
+ .auditoria{
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .tittle5{
+  font-size: 2em;
+  white-space: nowrap;
+ }
+ 
+}
+
+/*  */
 form{
   max-width: 500px;
   margin: auto;
+  margin-top: 15em;
   display: flex;
   flex-direction: column;
 }

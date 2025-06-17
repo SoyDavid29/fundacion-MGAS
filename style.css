@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;;
   font-size: 16px;
   background-color: #f7f7f7;
   color: #333;
@@ -343,14 +343,69 @@ gap: 2em;
   font-size: 2em;
   color: #ffffff;
   padding: 2rem;
+  font-weight: 300;
 }
 
-.seccion {
-  padding: 40px 20px;
+.aboutus{
+
+  margin-top: 4rem;
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tittle3{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.4em;
+  line-height: 1.3em;
+  margin: 0 0 .3em;
+  font-weight: 300;
+
+  color: #540BC2
+}
+.nosotros{
+  width:  80%;
+  height: auto;
+
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.nosotros-inf{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.img-nosotros{
+  width: 55%;
+  height: auto;
+}
+
+.parrafo{
+ font: 1em / 1.65em 'Open Sans', "Arial", sans-serif;
+ text-align: center;
+ color: #666666;
+}
+
+@media (max-width: 700px){
+ .nosotros{
+  display: flex;
+  flex-wrap: wrap;
+ }
+
+ .tittle3{
   text-align: center;
+ }
 }
 
-form {
+form{
   max-width: 500px;
   margin: auto;
   display: flex;

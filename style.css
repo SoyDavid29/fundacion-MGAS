@@ -434,7 +434,11 @@ gap: 2em;
  flex-direction: row;
  justify-content: center;
  align-items: center;
- gap: 5em;
+ gap: 6rem;
+
+ text-align: start;
+ padding: 0 auto;
+
 }
 
 .biografia{
@@ -445,7 +449,8 @@ gap: 2em;
 
   display: flex;
   flex-direction: column;
- 
+  justify-content: start;
+  gap: 1em;
   
 }
 
@@ -457,17 +462,17 @@ gap: 2em;
 
 .bio{
   color: rgba(96, 91, 168, 1);
-  min-width: 20em;
   max-width: 34em;
   height: auto;
 }
 
 .acordeon{
 
-  width: 50%;
+  width: 100%;
   height: auto;
 
   margin-top: 2em;
+  padding: 0;
 
   color: #E009DA;
   list-style: none;
@@ -477,6 +482,25 @@ gap: 2em;
   gap: 3em;
 }
 
+ul{
+  width: 100%;
+  height: auto;
+}
+
+li{
+
+  min-width: 100px;
+  height: auto;
+
+  box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.10);
+  border-radius: 10px;
+  margin-bottom: 18px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  padding-top: 10px;
+  background-color: rgba(255, 255, 255, 1);
+}
 .img-me{
   max-width: 50%;
   
@@ -520,7 +544,7 @@ gap: 2em;
 }
 
 .textos-auditoria{
-
+ 
   width: 50%;
   height: auto;
 
@@ -579,6 +603,14 @@ p{
   flex-wrap: wrap;
  }
 
+ .bio{
+  max-width: 500px;
+ }
+
+ .img-me{
+  max-width: 400px;
+ }
+
  .img-nosotros{
   width: 100%;
  }
@@ -586,6 +618,8 @@ p{
   text-align: center;
  }
  .auditoria{
+  margin-top: 1em;
+  padding: 1em 1em;
   flex-direction: column;
   align-items: center;
  }

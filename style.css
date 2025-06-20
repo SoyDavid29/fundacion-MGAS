@@ -63,35 +63,6 @@ nav a {
 
 }
 
-/* 📱 Responsive styles */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  nav {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    height: 50%;
-    background: rgba(144, 168, 236, 0.966);
-    margin-top: 1rem;
-    padding: 1rem 0;
-    text-align: center;
-  }
-
-  nav a {
-    padding: 0.75rem 1rem;
-    font-size: 1rem;
-    color: rgb(5, 5, 5);
-  }
-
-  nav.active {
-    display: flex;
-  }
-}
-
-
 .hero {
   position: relative;
   width: 100%;
@@ -204,7 +175,7 @@ gap: 2em;
   
   width: 40%;
 
-  text-align: center; /* or center if you want */
+  text-align: center; 
   white-space: nowrap;
 
   color: white;
@@ -230,70 +201,6 @@ gap: 2em;
   text-decoration: none;
   padding: 1em;
 }
-
-/* 🪄 Mobile Responsiveness */
-
-@media (max-width: 518px) {
-
-  body{
-    min-width: 250px;
-  }
-  .text-galery {
-    position: absolute; /* ⬅️ KEEP this */
-    top: 50%; /* ⬅️ Try 50%, adjust as needed */
-    left: 50%;
-    transform: translate(-50%, -40%);
-    width: 80%;
-    min-width: 292px;
-    font-size: clamp(1rem, 4vw, 1.2rem);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-  }
-
-  .main-tittle{
-    font-size: 2em;
-  }
-
-  .button-text {
-    width: 100%;
-    align-items: center;
-    gap: 0;
-  }
-
-  .text-button1, 
-  .text-button2, 
-  .text-button3 {
-    width: 100%;
-    min-width: 290px;
-    padding: 2rem;
-  }
-
-  .text-button1 a,
-  .text-button2 a,
-  .text-button3 a {
-    width: 100%;
-    text-align: center;
-    padding: 0;
-  }
-
-  .min-text {
-    font-size: 16px;
-  }
-
-  .mgas{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .tittle1, .tittle2{
-   font-size: 1.5em;
-   color: #ffffff;
-  }
-}
-
-
 
 .info{
   width: 100%;
@@ -403,9 +310,12 @@ gap: 2em;
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 
   background-color: rgba(236, 241, 246, 1);
+
+  text-align: center;
   
 }
 
@@ -416,9 +326,7 @@ gap: 2em;
   height: auto;
 
   font-family: 'Open Sans', sans-serif;
-  text-align: center;
-
-  font-size: 2.4em;
+  font-size: 2.5em;
   line-height: 1.3em;
   font-weight: 300;
 
@@ -522,7 +430,7 @@ li{
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   
-  font-size: 2.4em;
+  font-size: 2em;
   line-height: 1.3em;
   margin: 0 0 .3em;
   font-weight: 300;
@@ -536,7 +444,6 @@ li{
   padding-top: 168px;
 
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-around;
   
@@ -550,6 +457,7 @@ li{
 
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1em;
 }
 
@@ -557,7 +465,7 @@ li{
 
   font-family: 'Open Sans', sans-serif;
   
-  font-size: 4em;
+  font-size: 2.5em;
   line-height: 1.3em;
   font-weight: 300;
   color:#000
@@ -589,6 +497,168 @@ p{
   height: auto;
 
   object-fit: cover;
+}
+
+.donar{
+
+ margin-top: 8em;
+ width: 100%;
+ height: auto;
+
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+
+ gap: 2em;
+ padding: 20px;
+}
+
+.tittle6{
+  
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  
+  font-size: 2.4em;
+  line-height: 1.3em;
+  margin: 0 0 .3em;
+  font-weight: 300;
+  color: rgba(224, 13, 154, 1);
+}
+
+.info-donacion{
+  margin-top: 3em;
+  width: 90%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+
+}
+
+.img-donacion{
+  width: 50%;
+  height: auto;
+}
+
+.contactanos{
+
+  margin-top: 8em;
+
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+.contact{
+
+  width: 50%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2em;
+}
+
+.mail{
+  display: flex;
+  gap: 1em;
+}
+
+.logo2{
+  width: 80%;
+  height: auto;
+}
+
+.section-formulario{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario{
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px;
+  background-color: #004080;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #003060;
+}
+
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.redes{
+
+  margin-top: 8em;
+
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.text-social{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  
+  font-size: 2.4em;
+  line-height: 1.3em;
+  margin: 0 0 .3em;
+  font-weight: 300;
+  color: rgb(66, 27, 172);
+}
+
+.img-redes {
+  margin-top: 4em;
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  gap: 2em;               
+  flex-wrap: wrap;       
+
+}
+
+.img-links {
+  display: inline-block;
+  width: auto; /* let the image define size or control it below */
+}
+
+.img-soci {
+  width: 230px;
+  max-width: 100%;
+  height: auto;
 }
 
 @media (max-width: 794px){
@@ -631,40 +701,137 @@ p{
  
 }
 
-/*  */
-form{
-  max-width: 500px;
-  margin: auto;
-  margin-top: 15em;
-  display: flex;
-  flex-direction: column;
+/* 📱 Responsive styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    background: rgba(144, 168, 236, 0.966);
+    margin-top: 1rem;
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  nav a {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    color: rgb(5, 5, 5);
+  }
+
+  nav.active {
+    display: flex;
+  }
 }
 
-input, textarea {
-  margin-bottom: 10px;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-}
+/* 🪄 Mobile Responsiveness */
 
-button {
-  padding: 10px;
-  background-color: #004080;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-}
+@media (max-width: 582px) {
 
-button:hover {
-  background-color: #003060;
-}
+  body{
+    min-width: 250px;
+  }
+  .text-galery {
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 80%;
+    min-width: 292px;
+    font-size: clamp(1rem, 4vw, 1.2rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
 
-footer {
-  background-color: #004080;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
+  .main-tittle{
+    font-size: 2em;
+  }
+
+  .button-text {
+    width: 100%;
+    align-items: center;
+    gap: 0;
+  }
+
+  .text-button1, 
+  .text-button2, 
+  .text-button3 {
+    width: 100%;
+    min-width: 290px;
+    padding: 2rem;
+  }
+
+  .text-button1 a,
+  .text-button2 a,
+  .text-button3 a {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .min-text {
+    font-size: 16px;
+  }
+
+  .mgas{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tittle1, .tittle2{
+   font-size: 1.5em;
+   color: #ffffff;
+  }
+
+  .about-me {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center; 
+  }
+
+  .biografia {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .bio {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+   .presidenta {
+    font-size: 1.6em;
+    padding: 2em;
+  }
+
+  .img-me {
+    max-width: 80%;
+  }
+
+  .info-donacion{
+    flex-direction: column;
+  }
+  
+  .img-donacion{
+    width: 100%;
+  }
+
+  .contactanos{
+    flex-wrap: wrap;
+    align-items: center;
+    gap:3em;
+  }
+
+  .contact{
+    align-items: center;
+  }
 }

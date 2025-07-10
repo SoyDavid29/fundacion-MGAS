@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <title>MGAS - Fundacion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  </head>
+  <body>
+    <header>
+      <div class="sidebar">
+        <img class="logo" src="images/logo.png" alt="logo">
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <nav id="nav">
+          <a href="#inicio">Inicio</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#presidenta">Presidenta</a>
+          <a href="#auditorias">Auditorias</a>
+          <a href="#noticias">Noticias</a>
+          <a href="#donar">Donar</a>
+          <a href="#galeria">Galería</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero" id="inicio">
+      <!-- Swiper Slider: Carrusel de fondo con flechas y bolitas -->
+       <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+       
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/imagen1.png" alt="Slide 1"></div>
+            <div class="swiper-slide"><img src="images/imagen2.png" alt="Slide 2"></div>
+            <div class="swiper-slide"><img src="images/imagen3.png" alt="Slide 3"></div>
+            <div class="swiper-slide"><img src="images/imagen4.png" alt="Slide 4"></div>
+            <div class="swiper-slide"><img src="images/imagen5.png" alt="Slide 5"></div>
+          </div>
+          <!-- Flechas -->
+           <div class="swiper-button-next"></div>
+           <div class="swiper-button-prev"></div>
+          <!-- Bolitas -->
+           <div class="swiper-pagination"></div>
+        </div>
+        <!-- Texto sobre las imágenes -->
+         <div class="text-galery">
+          <div class="texts">
+            <h2>SOMOS UNA FUNDACIÓN</h2>
+            <h1>SIN FINES DE LUCRO</h1>
+          </div>
+          <div class="button-text">
+            <div class="text-button1">
+              <span class="min-text">PRESIDENTA</span>
+              <a href="#presidenta">Más Info.</a>
+            </div>
+            <div class="text-button2">
+              <span class="min-text">DONACIONES</span>
+              <a href="#donar">Más Info.</a>
+            </div>
+            <div class="text-button3">
+              <span class="min-text">CONTACTO</span>
+              <a href="#contacto">Más Info.</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script>
+        const swiper = new Swiper(".mySwiper", {
+          loop: true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                },
+                });
+       </script>
+    </section>
+
+    <section class="Info">
+      <div class="malala-img" src="images/imagen1.png" alt="photo"></div>
+      <div class="mgas">
+        <div class="fundacion">
+          <h2 class="tittle1"> Apoyando a más de 1,234 familias, por:           Más de 2700 pacientes beneficiados.</h2>
+          <h1 class="tittle2">FUNDACION MGAS.AC</h1>
+        </div>
+        <img class="mgas-img" src="images/imagen6.png" alt="photo">
+      </div>
+    </section>
+
+    <section class="aboutus" id="nosotros">
+      <h2 class="tittle3">NUESTRA INSTITUCIÓN</h2>
+      <div class="nosotros">
+        <div class="nosotros-inf">
+          <img class="img-nosotros" src="images/imagen7.png" alt="">
+          <h3>MISIÓN</h3>
+          <p class="parrafo">Apoyar a niños en situcion de pobreza
+            extrema, marginación, población indigena y
+            escasos recursos con parálisis cerebral,
+            displegia espástica, cuadríplegía espástica o
+            alguna espasticidad para que puedan ser
+            valorados y en su caso intervenidos.
+          </p>
+        </div>
+        <div class="nosotros-inf">
+          <img class="img-nosotros" src="images/imagen8.png" alt="">
+          <h3>VISIÓN</h3>
+          <p class="parrafo">Mejorar la calidad de vida de niños y niñas con
+            parálisis Cerebral espástica y sus familias.
+            (Fibrotomía Gradual Muscular), Logrando llevar
+            las jornadas de Cirugías a diferentes estados de
+            la República Mexicana y países de
+            Latinoamerica.
+          </p>
+        </div>
+        <div class="nosotros-inf">
+          <img class="img-nosotros" src="images/imagen9.png" alt="">
+          <h3>VALORES</h3>
+          <p class="parrafo"> •AMOR •TEMPLANZA •ESPERANZA
+            •SOLIDARIDAD •ESFUERZO •DISCIPLINA
+            •ALEGRIA •RESPETO •TOLERANCIA
+            •RESPONSABILIDAD •FE •FAMILIA
+            •VOLUNTARIADO •HONESTIDAD
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--Inicia codigo de la parte de botones e Imagen de Mari rouss-->
+    <section class ="Presidenta" id="presidenta">
+      <div class="container">
+        <!--COLUMNA IZQUIERDA-->
+        <div class ="left-column">
+          <h2>MARI ROUSS VILLEGAS BALMORI</h2>
+          <p>(Pachuca, Hidalgo, México) es Presidenta de la
+            Fundación MGAS, A.C. que apoya a niños en 
+            situación de pobreza extrema y con parálisis 
+            cerebral o alguna espasticidad para que sean 
+            valorados e intervenidos mediante la técnica de 
+            Fibrotomía Gradual Muscular para que el paciente 
+            mejore su calidad de vida y tenga mayor rango de 
+            movimiento.
+          </p>
+          <div class="accordion">
+            <div class="accordion-item">
+              <button class="accordion-header" onclick="toggleAccordion(this)"><spam class="symbol">+</spam> BIBLIOGRAFIA</button>
+              <div class="accordion-content">
+                <p>Mari Rouss nació en Pachuca, Hidalgo en la cuna de una familia
+                  forjada en el trabajo. Hija del Lic. y CP  Gonzalo Villegas de la Concha 
+                  y la Dra. Rosaura Balmori Chehin, creció con el ejemplo del trabajo y 
+                  esfuerzo para salir adelante. Su abuela, Gertrudis de la Concha, 
+                  trabajaba de enfermera y lavaba ajeno para pagar los estudios de 
+                  sus cuatro hijos ella sola. De niño, el padre de Mari Rouss boleaba 
+                  zapatos y con el apoyo de su abuela estudió 2 carreras, maestría y 
+                  doctorado, razón por la cual dentro de su familia siempre ha sido 
+                  importantísima la educación. Para ella el ejemplo de una abuela tan 
+                  echada para adelante ha sido toda una inspiración, ella comenta que 
+                  la educación es la base del avance que como sociedad podemos 
+                  tener y que el mejor ejemplo es su familia, ya que en una sola g
+                  eneración han logrado grandes metas, todo a través del esfuerzo,  
+                  la educación y el trabajo.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-header" onclick="toggleAccordion(this)"><spam class="symbol">+</spam> ESTUDIOS</button>
+              <div class="accordion-content">
+                <p>Para realizar sus estudios profesionales, viajó sola a la capital de México en donde logró ser aceptada en la Escuela Libre de Derecho, que es una de las instituciones más reconocidas por su calidad y carácter plural.</p>
+                <p>Cuando recibió su título de Abogado, ingresó en la Escuela de Derecho de la Universidad de Virginia, una de las 3 mejores Escuelas de Derecho en los Estados Unidos para estudiar la Maestría en Derecho Bursátil y Financiero.</p>
+                <p>Sus padres siempre le apostaron a brindarles la mejor educación a ella y su hermano, asistió a la Escuela Americana y al Tec. de Monterrey en su natal Pachuca, Hidalgo, además de viajar cada verano desde muy corta edad a diferentes campamentos, escuelas, boarding schools y Universidades como Harvard para incrementar sus conocimientos y hablidades.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-header" onclick="toggleAccordion(this)"><spam class="symbol">+</spam> LABOR SOCIAL</button>
+              <div class="accordion-content">
+                <p>Cuando terminó sus estudios, se fue a vivir a Nueva York donde aplicó su ingreso a la Organización de las Naciones Unidas.</p>
+                <p>En el año 2000 entró como becaria en la ONU para promover la equidad de género en el mundo. Durante este tiempo trabajó para exigir los derechos de las mujeres en el conflicto de los Balcanes y en los movimientos armados del Oeste de África, Liberia, Congo, entre otros, así como asistir a inmigrantes tanto de Guatemala como de El Salvador en la ONG Latinamerican Assistance en su proceso de asilo político ante la corte en Estados Unidos.</p>
+                <p>Después del atentado a las Torres Gemelas, regresó a México para trabajar en la Fundación Casa Alianza ayudando a niños en situación de calle, víctimas de comercio sexual, con VIH o con algún tipo de adicción. Dentro de esta fundación trabajó en el Área de Desarrollo de Proyectos y participó en la investigación para trazar la ruta de trata infantil desde Tapachula hasta Tijuana en colaboración con Proceso y HBO, así como con la Fundación Elton John y la Fundación Ricky Martín, entre otras.</p>
+                <p>Años más tarde entró a trabajar al Área de Responsabilidad Social o Corporate Sustainability de HSBC, realizando proyectos con niños de la calle y niños migrantes no acompañados, de ecología y educación en México, Brasil, otros Países de Latinoamérica, Londres y Hong Kong.</p>
+                <p>Después del nacimiento de sus dos hijos, fundó la Fundación MGAS en donde trabaja como Presidenta y organiza Jornadas de Cirugías en México para ayudar a niños con parálisis cerebral espástica de su País, Latinoamérica, Estados Unidos y Canadá para que puedan ser operados por los médicos rusos de Ulzibat.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-header" onclick="toggleAccordion(this)"><spam class="symbol">+</spam> EXPERIENCIA PERSONAL EN PARÁLISIS CEREBRAL</button>
+              <div class="accordion-content">
+                <p>Cuando nació su segunda hija, notó que algo no era normal en ella y buscó diferentes opiniones médicas sin recibir un diagnóstico acertado. De esta manera viajó por el mundo hasta que llegó a Rusia en donde finalmente le diagnosticaron parálisis cerebral y la operaron.</p>
+                <p>Mari Rouss es fundadora y Presidenta de la Fundación MGAS, A.C. que tiene la misión de apoyar a niños en situación de pobreza extrema y con parálisis cerebral o alguna espasticidad, para que puedan ser valorados y en su caso intervenidos quirúrgicamente por médicos del Instituto de Rehabilitación de Tula.</p>
+                <h5>Otras actividades</h5>
+                <p>Participa en el Consejo y es voluntaria en varias organizaciones de la Sociedad Civil como Cadena, Manos Manchadas de Pintura, FAE, Casa Alianza, entre otras. Además es una activista que lucha por los derechos de los más necesitados involucrándose en labores de recosntrucción después de los Sismos de Septiembre 2017 en su País, así como en otras causas.</p>
+                <p>Actualmente, además de las actividades ya mencionadas, colabora con Noticieros Televisa en el Programa Al Aire con Paola Rojas acercando a las Organizaciones de la Sociedad Civil, Fundaciones y Asociaciones sin fines de lucro, para que puedan difundir su labor con reportajes y entrevistas en vivo, dando voz a causas de relevancia humanitaria y a personas extraordinarias que mueven a México y el mundo.</p>
+                <p>La Fundación es creada en el 2011.</p>
+                <p>La definición de MGAS = María, Gonzalo Antonio, Sandhu</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--COLUMNA DERECHA-->
+        <div class="right-column">
+          <img src="images/imagen10.png" alt="imagen10">
+        </div>
+      </div>
+    </section>
+
+    <!--Inicia codigo de la parte de Empresa Auditora-->
+    <section class="Auditorias" id="auditorias">
+      <div class="titulo-principal">EMPRESA AUDITORA</div>
+      <div class="auditoria-container">
+        <div class="auditoria-texto">
+          <h4>AUDITOR</h4>
+          <h2>Ernst and Young</h2>
+          <p>En 2017 E&amp;Y nos realiza la primer auditoría contable.</p>
+          <p><strong>Obteniendo resultado Satisfactorio.</strong></p>
+          <p><strong>Cuatro años siendo auditados.</strong></p>
+          <a href="https://www.ey.com/es_mx" class="boton-vermas" target="_blank">Ver más…</a>
+        </div>
+        <div class="auditoria-logo">
+          <img src="images/imagen11.png" alt="Logo de Ernst and Young">
+        </div>
+      </div>
+    </section>
+
+    <!--Inicia codigo de la parte de Donar-->
+    <section class="donar" id="donar">
+      <div class="titulo-donar">APOYANOS CON TU DONACION</div>
+      <div class="donar_imagenes_container">
+        <div class="donar_izquierda_container">
+          <img src="images/imagen13.png" alt="Imagen izquierda">
+        </div>
+        <div class="donar_derecha_container">
+          <img src="images/imagen12.png" alt="Imagen derecha">
+        </div>
+      </div>
+    </section>
+
+    <!--Inicia codigo de contacto-->
+    <section class="contacto" id="contacto">
+      <div class="contacto-container">
+        <!-- Columna izquierda -->
+         <div class="contacto-left">
+          <h2>Contáctanos</h2>
+          <p>Sus opiniones son importantes para nosotros. Ya sea una pregunta simple o una sugerencia valiosa, estamos aquí 24/7. Puede llamarnos por teléfono o enviarnos un correo electrónico directamente.</p>
+          <div class="correo">
+            <i class="fa fa-envelope"></i>
+            <span>fundacionmgas@gmail.com</span>
+          </div>
+          <img src="images/logo.png" alt="Fundación MGAS logo" class="logo-contacto">
+        </div>
+        <!-- Columna derecha -->
+         <div class="contacto-right">
+          <h3>EMAIL US</h3>
+          <!-- Formulario real -->
+           <form class="form-contacto" action="#" method="post">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-enviar">Enviar mensaje</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!--Inicia codigo de la parte de galeria de actividades-->
+    <section class="galeria" id="galeria">
+      <div class="titulo_galeria">GALERIA DE ACTIVIDADES</div>
+    </section>
+
+    <!--Inicia codigo de la parte de Noticias-->
+    <section class="noticias" id="noticias">
+      <h2 class="titulo-noticias">NOTICIAS</h2>
+      <div class="noticias-tabla">
+        <div class="fila">
+          <div class="col-fecha">Febrero 2020</div>
+          <div class="col-evento">“Taller de Terapias Cuernavaca, Morelos”<br>“Oaxaca 2020”</div>
+        </div>
+        <div class="fila">
+          <div class="col-fecha">Marzo 2020</div>
+          <div class="col-evento">“Mujeres Líderes que trabajan por México”</div>
+        </div>
+        <div class="fila">
+          <div class="col-fecha">Abril 2020</div>
+          <div class="col-evento">“Todo saldrá bien”</div>
+        </div>
+        <div class="fila">
+          <div class="col-fecha">Mayo 2020</div>
+          <div class="col-evento">“Apoyo durante emergencia sanitaria Covid19”</div>
+        </div>
+        <div class="fila">
+          <div class="col-fecha">Junio 2020</div>
+          <div class="col-evento">Alianza con otras Fundaciones<br>“Fortaleza, IAP refugio para mujeres víctimas de violencia”</div>
+        </div>
+        <div class="fila">
+          <div class="col-fecha">Julio 2020</div>
+          <div class="col-evento">“Apoyos con despensas Tezontepec de Aldama, Hidalgo”<br>CEMEFI Fondo despensas MX</div>
+        </div>
+        <div class="fila">
+          <div class="col-fecha">Agosto 2020</div>
+          <div class="col-evento">“Anthus_ac apoyo a víctimas de trata.”</div>
+        </div>
+        <div class="fila">
+          <div class="col-fecha">Septiembre 2020</div>
+          <div class="col-evento">“Hoy va por Diego”<br>“Apoyo a artesanas cubrebocas”</div>
+        </div>
+        <div class="fila">
+          <div class="col-fecha">Octubre 2020</div>
+          <div class="col-evento">“Pasa la Voz”</div>
+        </div>
+        <div class="fila">
+          <div class="col-fecha">Noviembre 2020</div>
+          <div class="col-evento">“Pasarela Épica”</div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function toggleAccordion(button) {
+        const content = button.nextElementSibling;
+        const symbol = button.querySelector('.symbol');
+        content.classList.toggle('open');
+        symbol.textContent = content.classList.contains('open') ? '–' : '+';
+        }
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </body>
+  <footer class="footer">
+    <!--Inicia codigo de la parte de Footer-->
+    <a href="#inicio" class="scroll-top"></a>
+    <div class="footer-redes">
+      <h2><span>SÍGUENOS</span> EN NUESTRAS <span>REDES SOCIALES</span></h2>
+      <div class="footer-icons">
+        <a href="https://facebook.com" target="_blank">
+          <img src="images/fb.png" alt="Facebook">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src="images/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="images/twitter.png" alt="Twitter">
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <a href="#inicio" class="scroll-top" aria-label="Ir al inicio">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#540bc2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="18 15 12 9 6 15" />
+        </svg>
+      </a>
+      <img src="images/footer.png" alt="Fundación MGAS" class="footer-logo">
+      <nav class="footer-menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#presidenta">Presidenta</a>
+        <a href="#auditorias">Auditorías</a>
+        <a href="#donar">Donar</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+</html>
